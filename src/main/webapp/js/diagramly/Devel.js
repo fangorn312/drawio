@@ -47,11 +47,7 @@ if (!mxIsElectron && location.protocol !== 'http:')
 				'\'sha256-4Dg3/NrB8tLC7TUSCbrtUDWD/J6bSLka01GHn+qtNZ0=\' ' +
 				//---------------------------------------------------------//
 				'; ' +
-			'connect-src %connect-src% \'self\' https://*.draw.io https://*.diagrams.net ' +
-				'https://*.googleapis.com wss://*.pusher.com https://*.pusher.com ' +
-				'https://api.github.com https://raw.githubusercontent.com https://gitlab.com ' +
-				'https://graph.microsoft.com https://*.sharepoint.com  https://*.1drv.com ' +
-				'https://*.google.com https://fonts.gstatic.com https://fonts.googleapis.com; ' +
+			'connect-src * \'unsafe-inline\'; ' +
 			// font-src about: is required for MathJax HTML-CSS output with STIX
 			'img-src * data:; media-src * data:; font-src * about:; ' +
 			// www.draw.io required for browser data migration to app.diagrams.net and
